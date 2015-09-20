@@ -14,13 +14,13 @@
 
 $lang="en";			// Language ("en" - english, "ru" - russian)
 $host="localhost";		//Your MySql server host (usually localhost)
-$user="burningw_root";			//Your MySql user
-$password="c10c20c30c";		//Your MySql user password
-$db="burningw_ochar";			//Character database
+$user="root";			//Your MySql user
+$password="root";		//Your MySql user password
+$db="charactersr";			//Character database
 $hostr="localhost";		//Login databse host (realmd)
-$userr="burningw_root";			//MySql User
-$passwordr="c10c20c30c";		//MySql login db user pass
-$dbr="burningw_orealm";			//Login db name (realmd)
+$userr="root";			//MySql User
+$passwordr="root";		//MySql login db user pass
+$dbr="logon";			//Login db name (realmd)
 $database_encoding = ''; 	// Set encoding
 $img_base = "img/";		// Image dir
 $server = "localhost";		//Realm ip addres
@@ -56,18 +56,18 @@ case "en":
 case "ru": 
 	$button="create_ru.gif";
 	$text = Array(
-	'acc' => 	'Ñîçäàíèå àêêàóíòà',
-	'create' => 'çàâåðøåíî !',
-	'failed' => 'íåâîçìîæíî !',
-	'not_all' => 'Çàïîëíåíû íå âñå ïîëÿ',
+	'acc' => 	'Ã‘Ã®Ã§Ã¤Ã Ã­Ã¨Ã¥ Ã ÃªÃªÃ Ã³Ã­Ã²Ã ',
+	'create' => 'Ã§Ã Ã¢Ã¥Ã°Ã¸Ã¥Ã­Ã® !',
+	'failed' => 'Ã­Ã¥Ã¢Ã®Ã§Ã¬Ã®Ã¦Ã­Ã® !',
+	'not_all' => 'Ã‡Ã Ã¯Ã®Ã«Ã­Ã¥Ã­Ã» Ã­Ã¥ Ã¢Ã±Ã¥ Ã¯Ã®Ã«Ã¿',
 	'taken' => 'is already taken !',
-	'playerson' => 'èãðîêîâ íà ñåðâåðå',
-	'off' => 'ñåé÷àñ îòêëþ÷åí',
+	'playerson' => 'Ã¨Ã£Ã°Ã®ÃªÃ®Ã¢ Ã­Ã  Ã±Ã¥Ã°Ã¢Ã¥Ã°Ã¥',
+	'off' => 'Ã±Ã¥Ã©Ã·Ã Ã± Ã®Ã²ÃªÃ«Ã¾Ã·Ã¥Ã­',
 	'realm' => 'set realmlist ',
-	'name' => 'Èìÿ Àêêàóíòà',
-	'password' => 'Ïàðîëü',
-	'ip_limit' => Array('Ñ âàøåãî IP ',' àêêàóíòîâ óæå ñîçäàíî'),
-	'char' => Array('Ïåðñîíàæ','Ðàñà','Êëàññ','ËâË','Ðàñïîëîæåíèå'),
+	'name' => 'ÃˆÃ¬Ã¿ Ã€ÃªÃªÃ Ã³Ã­Ã²Ã ',
+	'password' => 'ÃÃ Ã°Ã®Ã«Ã¼',
+	'ip_limit' => Array('Ã‘ Ã¢Ã Ã¸Ã¥Ã£Ã® IP ',' Ã ÃªÃªÃ Ã³Ã­Ã²Ã®Ã¢ Ã³Ã¦Ã¥ Ã±Ã®Ã§Ã¤Ã Ã­Ã®'),
+	'char' => Array('ÃÃ¥Ã°Ã±Ã®Ã­Ã Ã¦','ÃÃ Ã±Ã ','ÃŠÃ«Ã Ã±Ã±','Ã‹Ã¢Ã‹','ÃÃ Ã±Ã¯Ã®Ã«Ã®Ã¦Ã¥Ã­Ã¨Ã¥'),
 	);
 	break; 
 }
@@ -473,7 +473,7 @@ if (empty($_POST['username']) and empty($_POST['passw']) and empty($_POST['email
 	$oregon_pwd = SHA1($username.':'.$passw);
 	$email = htmlspecialchars(trim($_POST['email']));
 	$ip = getenv('REMOTE_ADDR');
-// ñäåëàòü ïðîâåðêó íà íåïîëó÷åíèå èïà
+// Ã±Ã¤Ã¥Ã«Ã Ã²Ã¼ Ã¯Ã°Ã®Ã¢Ã¥Ã°ÃªÃ³ Ã­Ã  Ã­Ã¥Ã¯Ã®Ã«Ã³Ã·Ã¥Ã­Ã¨Ã¥ Ã¨Ã¯Ã 
 
 	$realm_db = new DBLayer($hostr, $userr, $passwordr, $dbr);
 	$realm_db->query("SET NAMES $database_encoding");
