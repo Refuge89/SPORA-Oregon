@@ -1,0 +1,51 @@
+BODY {
+	MARGIN: 0px; COLOR: #cccc99; BACKGROUND-COLOR: #000000
+}
+A {
+	FONT-WEIGHT: bold; COLOR: #ffb019
+}
+A:link {
+	FONT-WEIGHT: bold; COLOR: #ffb019
+}
+A:active {
+	FONT-WEIGHT: bold; COLOR: #ffb019
+}
+A:visited {
+	FONT-WEIGHT: bold; COLOR: #ffb019
+}
+A:hover {
+	FONT-WEIGHT: bold; COLOR: white
+}
+A.small:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 9px; COLOR: #ffb019
+}
+A.small:active {
+	FONT-WEIGHT: bold; FONT-SIZE: 9px; COLOR: #ffb019
+}
+A.small:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 9px; COLOR: #ffb019
+}
+A.small:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 9px; COLOR: white
+}
+SPAN {
+	FONT-SIZE: 10pt; COLOR: #ccc799; FONT-FAMILY: Arial,Helvetica,Sans-Serif
+}
+B {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #ffffff; FONT-FAMILY: Arial,Helvetica,Sans-Serif
+}
+SMALL {
+	FONT-SIZE: 8pt; COLOR: #ccc799; FONT-FAMILY: Arial,Helvetica,Sans-Serif
+}
+INPUT.button {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BACKGROUND-COLOR: transparent; BORDER-BOTTOM-STYLE: none
+}
+.error {
+	FONT-WEIGHT: bold; COLOR: #ff0000
+}
+.txt {
+	FONT-SIZE: 8pt; COLOR: #ccc799; FONT-FAMILY: Arial,Helvetica,Sans-Serif
+}
+.title {
+	FONT-SIZE: 10pt; COLOR: #ccc799; FONT-FAMILY: Arial,Helvetica,Sans-Serif
+}

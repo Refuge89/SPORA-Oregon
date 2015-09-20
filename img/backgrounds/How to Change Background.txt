@@ -1,0 +1,8 @@
+---------------------------------
+- How to change your background -
+---------------------------------
+
+To change your background, simply copy the background of your choice into the img folder.
+
+The background which gets used in the page is the one named back_create.jpg.
+Overwrite this file with the background you wish to use or rename if necessary.
